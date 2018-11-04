@@ -202,6 +202,13 @@ p{
     font-weight: 300;
 }
 
+.italicized-font{
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
 .quote{
     font-size:1rem;
     line-height:2;
@@ -215,7 +222,6 @@ p{
     border-left: solid 1px #030C17;
 
 }
-
 
 .bold{
     font-weight:600;
@@ -399,6 +405,12 @@ font-size: 1.625rem;
     max-width:1180px;
     margin: auto;
     margin-bottom:64px;
+}
+
+.case_body{
+    max-width: 1180px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .flex{
