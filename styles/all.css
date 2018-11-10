@@ -19,6 +19,12 @@ ul.nav li {
   padding-left: 2rem;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 /*---------fixed---------*/
 .anchor{
     font-size:0.75rem;
@@ -150,14 +156,14 @@ h2{
 h3{
     font-size:1.5rem;
     line-height:150%;
-    font-weight:800;
+    font-weight:700;
     letter-spacing:0.08px;
 }
 
 .tall{
     font-size:2rem;
     line-height: 125%;
-    font-weight:600;
+    font-weight:400;
 }
 
 .font-conclude{
@@ -171,6 +177,7 @@ h4{
     font-size:0.875rem;
     line-height:171.43%;
     font-weight:400;
+    opacity: 0.7;
 }
 
 h5{
@@ -178,8 +185,8 @@ h5{
     line-height:145.45%;
     font-weight:400;
     letter-spacing:0.4px;
-    text-transform: uppercase;
-    opacity: 0.3;
+    /* text-transform: uppercase; */
+    /* opacity: 0.3; */
 }
 
 h6{
@@ -219,7 +226,8 @@ p{
 }
 
 .quote-border{
-    border-left: solid 1px #030C17;
+    border-left: solid 2px #030C17;
+    padding-left: 30px;
 
 }
 
@@ -646,20 +654,40 @@ font-size: 1.625rem;
     margin-left: 8px;
 }
 
+.xm-left{
+    margin-left: 48px;
+}
+
 .xl-left{
     margin-left:80px;
+}
+
+.xxl-left{
+    margin-left: 120px;
+}
+
+.xxl-right{
+    margin-right: 120px;
 }
 
 .xl-right{
     margin-right:80px;
 }
 
+.s-right{
+    margin-right:16px;
+}
+
 .m-right{
     margin-right:32px;
 }
 
+.xm-right{
+    margin-right: 48px;
+}
+
 .m-left{
-margin-left:32px;
+    margin-left:32px;
 }
 
 .xxl-pad{
@@ -957,12 +985,6 @@ margin-left:32px;
     transition:0.2s ease;
 }
 
-
-.cartel{
-    /*border:1px solid #E8E9EB;
-    padding: 32px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.04); */
-}
 
 #work{
     height:112px;
