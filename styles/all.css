@@ -365,10 +365,6 @@ font-size: 1.625rem;
     background-color:#FAFAFA;
 }
 
-.atlassian-bleu{
-    background-color:#7EB1F2;
-}
-
 .prisma-peach{
     background-color:#FBA373;
 }
@@ -784,7 +780,7 @@ font-size: 1.625rem;
 
 .button:after{
       content: '';
-      background-image: url('img/arrow_black.svg');
+      /* background-image: url('img/arrow_black.svg'); */
       background-size: 9px 9px;
       height: 9px;
       width: 9px;
@@ -796,7 +792,7 @@ font-size: 1.625rem;
 
 .blue:after{
          content: '';
-      background-image: url('img/arrow.svg');
+      /* background-image: url('img/arrow.svg'); */
       background-size: 9px 9px;
       height: 9px;
       width: 9px;
@@ -808,7 +804,7 @@ font-size: 1.625rem;
 
 .fleche-blanche:after{
     content: '';
-      background-image: url('img/arrow_white.svg');
+      /* background-image: url('img/arrow_white.svg'); */
       background-size: 9px 9px;
       height: 9px;
       width: 9px;
@@ -829,7 +825,7 @@ font-size: 1.625rem;
 }
 
 .button:hover::after{
-    background-image: url('img/arrow.svg');
+    /* background-image: url('img/arrow.svg'); */
 }
 
 .discover:hover::before{
@@ -1461,12 +1457,12 @@ h2{
 }
 
     .button:hover::after{
-    background-image: url('img/arrow_black.svg');
+    /* background-image: url('img/arrow_black.svg'); */
 }
 
  .blue:hover::after{
     content: '';
-      background-image: url('img/arrow.svg');
+      /* background-image: url('img/arrow.svg'); */
       background-size: 9px 9px;
       height: 9px;
       width: 9px;
