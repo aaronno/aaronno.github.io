@@ -337,6 +337,10 @@ font-size: 1.625rem;
     color:#368EF5;
 }
 
+.very-white{
+    background-color: #ffffff;
+}
+
 .very-dark{
     background-color:#020408;
 }
@@ -633,6 +637,10 @@ font-size: 1.625rem;
     padding-top:56px;
 }
 
+.ml-top{
+    padding-top:64px;
+}
+
 .s-top{
     margin-top: 16px;
 }
@@ -910,8 +918,21 @@ font-size: 1.625rem;
 .case-body .link{
     font-weight: 400;
 }
+/*
+.very-white .link{
+    color: black;
+    transition:width 0.25s ease;
+}
 
+.very-white .link:after{
+    width:100%;
+    background-color: black;
+    height: 1px;
+}
 
+.very-white .link:hover::after{
+    width:0;
+} */
 
 .very-dark .link{
     color:white;
