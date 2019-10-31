@@ -18,8 +18,7 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
-  <!-- <script src="js/prefixfree.min.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script> -->
+  <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,32 @@
     <li><a href="images/aaron_no_resume.pdf" class="classic-black nav-fx" target="_blank">Resume</a></li>
     <li><a href="https://www.linkedin.com/in/aaron-no/" class="classic-black nav-fx" target="_blank">LinkedIn</a></li>
   </ul>
+
+  <script>
+    $(document).ready(function() {
+        $(".casestudy-sidebar").hide(); //initially hide left naviagtion
+        var topOfOthDiv = $("#one").offset().top;
+        $(window).scroll(function() {
+            if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div
+                $(".casestudy-sidebar").show(); //reached the desired point -- show div
+            } else {
+                $(".casestudy-sidebar").hide();
+            }
+        });
+    });
+  </script>
+
+  <div class="casestudy-sidebar">
+    <ul class="nav2" id="sidebar">
+      <li><a href="#one">Prompt</a></li>
+      <li><a href="#two">Initial Research</a></li>
+      <li><a href="#three">Understanding the Problem</a></li>
+      <li><a href="#four">Defining the Problem</a></li>
+      <li><a href="#five">Sketches and Wireframes</a></li>
+      <li><a href="#six">High Fidelity Screen</a></li>
+      <li><a href="#seven">Things to Consider Further</a></li>
+    </ul>
+  </div>
 
   <div class="constrained left vertical">
     <div class="six xm-top mobile-xm-top adjust-title-width">
@@ -40,7 +65,7 @@
     <img src="images/google_design_exercise_hero.jpg" srcset="images/google_design_exercise_hero.jpg 2x" style="width:100%;" alt="google design exercise"/>
   </div>
 
-  <div id="top"></div>
+  <div id="top">
     <div class="very-dark xm-pad-bottom">
       <div class="constrained center white xl-top">
       <div class="six xm-bottom">
@@ -71,16 +96,19 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-  <div id="one"></div>
-  <div class="case_body">
+  <section id="one">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Prompt</h2>
       <p class="ten article-font centered s-bottom quote-border"><em>A new school year is approaching and the orientation team is looking to you for some design expertise. Design an experience for new students to browse, search, and propose new student organizations. Provide your overall process, a wireframe flow, and one to two screens at higher fidelity.</em></p>
 
       <p class="ten article-font centered s-bottom">I’m going to explain the process I followed to complete the design exercise. More importantly, I will highlight the reasons and the thought process behind my design decisions. I believe that design is about prioritizing and making compromises to solve the most important problem at the moment.</p>
+    </div>
+  </section>
 
-
+  <section id="two">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Initial Research</h2>
       <div class="flex tab-wrap">
         <div class="eight s-right tab-width xs-bottom"><img src="images/brainstorm1.jpg" srcset="images/brainstorm1.jpg 2x" style="width:100%;" alt="brainstorm_1_aaron"></div>
@@ -90,8 +118,11 @@
       <h4 class="s-bottom text-center">Initial brainstorming to understand the prompt</h4>
 
       <p class="ten article-font centered s-bottom"> I began with some brainstorming to understand the prompt of the design exercise and organize my initial thoughts. I took notes of my experience of exploring and joining student clubs in my freshman year. By doing this, I could find out issues with current experiences. At this stage, I just roughly listed out problems with club exploring and joining experience, what features the app would need, and what information would be shown.</p>
+    </div>
+  </section>
 
-
+  <section id="three">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Understanding the Problem</h2>
       <p class="ten article-font centered s-bottom">Before we start designing anything we should understand the real problem and find the root cause of a problem.</p>
 
@@ -126,8 +157,11 @@
         <p class="ten xl-left article-font quote-border centered s-bottom"><em>“We have <strong>a limited opportunity to continuously explore clubs</strong> throughout the semester.”</em></p>
 
         <p class="ten xl-left article-font quote-border centered s-bottom"><em>“It is <strong>difficult to find relevant club information</strong> without attending multiple information sessions and meeting club members.”</em></p>
+    </div>
+  </section>
 
-
+  <section id="four">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Defining the Problem</h2>
       <p class="ten article-font centered s-bottom">Taking these insights into account, I defined the following mission statement.</p>
 
@@ -142,8 +176,11 @@
       <p class="ten article-font centered ss-bottom">3. <strong>Help students keep track of important club events and deadlines</strong><br><br>
 
       Now we can start designing since we know what we want to achieve through the UI.</p>
+    </div>
+  </section>
 
-
+  <section id="five">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Sketches and Wireframes</h2>
       <p class="ten article-font centered s-bottom">What problems to solve, what features to focus, and what information is needed were clear after the above steps, I jumped right into a brainstorming phase. I quickly draw the user flow, trying to include all relevant features I was thinking about.</p>
 
@@ -202,8 +239,12 @@
       <img class="s-top ss-bottom center_img" src="images/proposing_club.png" srcset="images/proposing_club.png 2x" style="width:100%;" alt="proposing_club"/>
 
       <p class="s-top ten article-font centered s-bottom">Of the six interviewees, only one participant was interested in creating a new student organization. Therefore, I assumed that starting a new club is not a common experience for many students, thus deciding to hide the feature inside the hamburger menu. Besides, the club registration process was quite complicated for beginners so I chose to include basic guidelines, procedures, policies, and a link to get started with proposing a new club.</p>
+    </div>
+  </section>
 
-    <h2 class="ten xm-top s-bottom centered">High Fidelity</h2>
+  <section id="six">
+    <div class="case_body">
+    <h2 class="ten xm-top s-bottom centered">High Fidelity Screen</h2>
         <div class="flex s-top tab-wrap">
           <div class="eight s-right tab-width xs-bottom"><img src="images/club_information_page.png" srcset="images/club_information_page.png 2x" style="width:100%;" alt="club_information_page"></div>
           <p class="s-top ten article-font centered s-bottom">This is a high-fidelity screen of the club information page. I wanted to <em>provide concise and useful club information</em> so students can easily choose whether they want to know more about the club or not.<br><br>
@@ -216,11 +257,17 @@
 
           Finally, users can quickly preview the upcoming events of the club and can decide to know more about the events by simply clicking on the <em>event</em> card.</p>
         </div>
+    </div>
+  </section>
 
-
+  <section id="seven">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Things to Consider Further</h2>
       <p class="ten article-font centered xm-bottom">
       1. Conduct multiple rounds of user testing to keep iterate on my solution.<br>
       2. Incorporate search filters so users can better find clubs of their choices. <br>
       3. Add my calendar or favorite page to help schedule management.<br></p>
+    </div>
+  </section>
 </body>
+</html>

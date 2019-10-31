@@ -9,7 +9,7 @@
 
     gtag('config', 'UA-133353237-1');
   </script>
-  
+
   <title>Aaron No | Instagram</title>
   <link rel="shortcut icon" sizes="32x32" href="images/favicon.png">
   <link rel="apple-touch-icon" sizes="32x32" href="images/favicon.png">
@@ -18,8 +18,7 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
-  <!-- <script src="js/prefixfree.min.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script> -->
+  <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,37 @@
     <li><a href="images/aaron_no_resume.pdf" class="classic-black nav-fx" target="_blank">Resume</a></li>
     <li><a href="https://www.linkedin.com/in/aaron-no/" class="classic-black nav-fx" target="_blank">LinkedIn</a></li>
   </ul>
+
+  <script>
+    $(document).ready(function() {
+        $(".casestudy-sidebar").hide(); //initially hide left naviagtion
+        var topOfOthDiv = $("#one").offset().top;
+        $(window).scroll(function() {
+            if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div
+                $(".casestudy-sidebar").show(); //reached the desired point -- show div
+            } else {
+                $(".casestudy-sidebar").hide();
+            }
+        });
+    });
+  </script>
+
+  <div class="casestudy-sidebar">
+    <ul class="nav2" id="sidebar">
+      <li><a href="#one">Introduction</a></li>
+      <li><a href="#two">Understanding the Problem</a></li>
+      <li><a href="#three">Defining the Problem</a></li>
+      <li><a href="#four">Determining Spaces to Improve</a></li>
+      <li><a href="#five">Suggested Solution</a>
+          <!-- <ul class="nav2">
+            <li><a href="#five">Scheduling Future Posts</a></li>
+            <li><a href="#six">Preview / Edit / View Posts</a></li>
+          </ul> -->
+      </li>
+      <li><a href="#seven">Instagram UI Kit</a></li>
+      <li><a href="#eight">What I Learned</a></li>
+    </ul>
+  </div>
 
   <div class="constrained left vertical">
     <div class="six xm-top mobile-xm-top adjust-title-width">
@@ -40,7 +70,7 @@
     <img src="images/instagram_hero.png" srcset="images/instagram_hero.png 2x" style="width:100%;" alt="instagram"/>
   </div>
 
-  <div id="top"></div>
+  <div id="top">
     <div class="very-dark xm-pad-bottom">
       <div class="constrained center white xl-top">
       <div class="six xm-bottom">
@@ -55,7 +85,7 @@
           <p class="light">Product design, User research, Interacton design, Prototype</p>
         </div>
         <div class="three half-tab-width s-bottom">
-          <h5>Client</h5>
+          <h5>Company</h5>
           <p class="light">School project</a></p>
         </div>
       </div>
@@ -71,15 +101,19 @@
         </div>
       </div>
     </div>
+  </div>
 
-  <div id="one"></div>
-  <div class="case_body">
+  <section id="one">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Introduction</h2>
     <p class="ten article-font centered s-bottom">Humans are visual creatures. We prefer to collect and interpret information via sight. By appealing to that visual nature, Instagram lets you become an artist. The app allows you to take a photo and turn into something magnificent. After few clicks, you can craft your own masterpieces and feel like a real photographer. While Instagram promotes aesthetic photo creation, it lacks an ability to experiment with posts and profile feeds. This prevents Instagram users from curating their own artistic worlds.<br><br>
 
     How might Instagram help users to experiment with posts? How might it provide an easier way to better curate users’ profile feeds?</p>
+    </div>
+  </section>
 
-
+  <section id="two">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Understanding the Problem</h2>
       <h3 class="ten m-top ss-bottom centered">User Research & Findings</h3>
         <p class="ten article-font centered s-bottom">1. People forget to post.</p>
@@ -90,14 +124,20 @@
 
         <p class="ten article-font centered s-bottom">3. People desire to look professional and sophisticated.</p>
           <p class="ten xl-left article-font quote-border centered s-bottom"><em>“I created a second account to experiment how my new posts fit in my current profile feed … everyone is an artist on Instagram.”</em></p>
+    </div>
+  </section>
 
-
-    <h2 class="ten xm-top s-bottom centered">Defining the People Problem</h2>
+  <section id="three">
+    <div class="case_body">
+    <h2 class="ten xm-top s-bottom centered">Defining the Problem</h2>
       <p class="ten article-font centered s-bottom">After several rounds of interviews, I found that Instagram’s lack of support for curating profile feed and timely posting things frustrate users.</p>
         <p class="ten xxl-left font-conclude centered s-bottom"><em>People want to perfectly tailor their Instagram feeds but they have a hard time timely posting things and visualizing how posts will fit.</em></p>
+    </div>
+  </section>
 
-
-    <h2 class="ten xm-top s-bottom centered">Determining Feature Spaces to Improve</h2>
+  <section id="four">
+    <div class="case_body">
+    <h2 class="ten xm-top s-bottom centered">Determining Spaces to Improve</h2>
       <div class="flex tab-wrap">
         <div class="eight s-right tab-width xs-bottom"><img src="images/brainstorming_1.jpeg" srcset="images/brainstorming_1.jpeg 2x" style="width:100%;" alt="brainstorming1"></div>
         <div class="eight tab-width xs-bottom"><img src="images/brainstorming_2.jpeg" srcset="images/brainstorming_2.jpeg 2x" style="width:100%;" alt="brainstorming2"></div>
@@ -115,8 +155,11 @@
         <p class="ten article-font centered s-bottom">Analyzing six solution spaces by <em>impact</em> (i.e., how beneficial the feature would be for Instagram users) and <em>feasibility</em> (i.e., how difficult the feature would be for Instagram to generate), I decided on an opportunity with the highest impact & feasibility: <br><br>
 
         <strong>Scheduling Posts:</strong> How might we schedule future posts? How might we preview/edit/view scheduled posts? </p>
+    </div>
+  </section>
 
-
+  <section id="five">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Scheduling Future Posts</h2>
       <p class="ten article-font centered s-bottom">Currently, Instagram lacks a scheduling post feature and users have to save posts as drafts for future publications. More than often, people forget to post on specific times. Users need to use a third-party app to aid this process.</p>
 
@@ -194,8 +237,11 @@
         </div>
         <h4 class="text-center xm-bottom">InVision Prototype</h4>
         <hr class="m-bottom"></hr>
+    </div>
+  </section>
 
-
+  <section id="six">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Preview / Edit / View Scheduled Posts</h2>
       <p class="ten article-font centered s-bottom"><strong>Now we scheduled a post, what is next?</strong> As aspiring design gurus, we want to know how scheduled posts are going to fit in our profile feeds. We are inspired by new ideas and want to edit our scheduled posts. We want to know queues for our scheduled posts.</p>
 
@@ -241,30 +287,40 @@
         </div>
         <h4 class="text-center xm-bottom">InVision Prototype</h4>
         <hr class="m-bottom"></hr>
+    </div>
+  </section>
 
-
+  <section id="seven">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Instagram UI Kit</h2>
       <p class="ten article-font centered s-bottom"><em>This is the UI Kit that I created from my product design process.</em></p>
       <div class="flex center vertical xs-bottom">
         <img src="images/ui_foundations.png" srcset="images/ui_foundations.png 2x" style="width:100%;" alt="content"/>
       </div>
       <h4 class="text-center xm-bottom">UI Kit</h4>
+    </div>
+  </section>
 
+  <section id="eight">
+    <div class="case_body">
+    <h2 class="ten xm-top s-bottom centered">What I Learned</h2>
+      <p class="ten article-font centered s-bottom">For <strong>product thinking</strong>, I found it was difficult to focus on the most important features to my people problem. Multiple solutions seemed all plausible and intriguing, but I needed to select only few of them. Under time constraints, it is best to identify and iterate on key features rather than tackling too many features.<br><br>
 
-      <h2 class="ten xm-top s-bottom centered">What I Learned</h2>
-        <p class="ten article-font centered s-bottom">For <strong>product thinking</strong>, I found it was difficult to focus on the most important features to my people problem. Multiple solutions seemed all plausible and intriguing, but I needed to select only few of them. Under time constraints, it is best to identify and iterate on key features rather than tackling too many features.<br><br>
+      For <strong>visual & interaction design</strong>, I learned most importantly that <em>consistency</em> matters a lot. Looking back, I was captivated by design ideas that deviate from Instagram’s design system. In the future, I will perform more iterations to demonstrate consistency throughout my design process.</p>
+  </section>
 
-        For <strong>visual & interaction design</strong>, I learned most importantly that <em>consistency</em> matters a lot. Looking back, I was captivated by design ideas that deviate from Instagram’s design system. In the future, I will perform more iterations to demonstrate consistency throughout my design process.</p>
+  <section id="nine">
+    <div class="case_body">
+    <h2 class="ten xm-top s-bottom centered">Things to Consider Further</h2>
+      <p class="ten article-font centered xm-bottom">
+      1. Would users be able to schedule multiple posts at once? <br>
+      2. Would users be able to delete multiple scheduled posts in queues? <br>
+      3. What would be the best time to schedule posts? How can users determine that?<br></p>
 
+      <hr class="xm-bottom"></hr>
 
-      <h2 class="ten xm-top s-bottom centered">Things to Consider Further</h2>
-        <p class="ten article-font centered xm-bottom">
-        1. Would users be able to schedule multiple posts at once? <br>
-        2. Would users be able to delete multiple scheduled posts in queues? <br>
-        3. What would be the best time to schedule posts? How can users determine that?<br></p>
-
-        <hr class="xm-bottom"></hr>
-
-        <p class="ten article-font centered s-bottom"><em>This is a case study for a project in <strong>Intro to Digital Product Design</strong>. I am in no way affiliated with Instagram. This article can be also found <a href="https://blog.prototypr.io/instagram-concept-scheduling-future-posts-44a938859f1b" target="_blank" class="link original-blue">here</a> on medium.</em></p>
-  </div>
+      <p class="ten article-font centered s-bottom"><em>This is a case study for a project in <strong>Intro to Digital Product Design</strong>. I am in no way affiliated with Instagram. This article can be also found <a href="https://blog.prototypr.io/instagram-concept-scheduling-future-posts-44a938859f1b" target="_blank" class="link original-blue">here</a> on medium.</em></p>
+    </div>
+  </section>
 </body>
+</html>

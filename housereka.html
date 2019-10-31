@@ -18,8 +18,7 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
-  <!-- <script src="js/prefixfree.min.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script> -->
+  <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,39 @@
     <li><a href="images/aaron_no_resume.pdf" class="classic-black nav-fx" target="_blank">Resume</a></li>
     <li><a href="https://www.linkedin.com/in/aaron-no/" class="classic-black nav-fx" target="_blank">LinkedIn</a></li>
   </ul>
+
+  <script>
+    $(document).ready(function() {
+        $(".casestudy-sidebar").hide(); //initially hide left naviagtion
+        var topOfOthDiv = $("#one").offset().top;
+        $(window).scroll(function() {
+            if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div
+                $(".casestudy-sidebar").show(); //reached the desired point -- show div
+            } else {
+                $(".casestudy-sidebar").hide();
+            }
+        });
+    });
+  </script>
+
+  <div class="casestudy-sidebar">
+    <ul class="nav2" id="sidebar">
+      <li><a href="#one">Introduction</a></li>
+        <!-- <ul class="nav nav-stacked">
+          <li><a href="#problem">Project Brief</a></li>
+          <li><a href="#solution">Primary Problem</a></li>
+          <li><a href="#methods">Our Approach</a></li>
+          <li><a href="#my-role">My Contribution</a></li>
+        </ul> -->
+      <li><a href="#two">Personal Challenges</a></li>
+      <li><a href="#three">Today's Solution</a></li>
+      <li><a href="#four">Understanding the Problem</a></li>
+      <li><a href="#five">Suggested Solution</a></li>
+      <li><a href="#six">Visual Design</a></li>
+      <li><a href="#seven">Final Prototype</a></li>
+      <li><a href="#eight">What I Learned</a></li>
+    </ul>
+  </div>
 
   <div class="constrained left vertical">
     <div class="six xm-top mobile-xm-top adjust-title-width">
@@ -40,7 +72,7 @@
     <img src="images/housereka_hero.png" srcset="images/housereka_hero.png 2x" style="width:100%;" alt="housereka"/>
   </div>
 
-  <div id="top"></div>
+  <div id="top">
     <div class="very-dark xm-pad-bottom">
       <div class="constrained center white xl-top">
       <div class="six xm-bottom">
@@ -71,10 +103,10 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-  <div id="one"></div>
-  <div class="case_body">
+  <section id="one">
+    <div class="case_body">
     <!-- <h2 class="ten xm-top m-bottom centered"><a href="images/lyft_deck.pdf" target="_blank" class="link original-blue">Lyft Deck</a></h2> -->
     <h2 class="ten xm-top m-bottom centered">Introduction</h2>
       <h3 class="ten m-top ss-bottom centered">Project Brief</h3>
@@ -90,12 +122,12 @@
         <p class="ten article-font centered xm-bottom">Vietnamese who are willing or planning to buy pre-sale apartments.</p>
 
         <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="two"></div>
-  <div class="case_body">
-    <h2 class="ten xm-top m-bottom centered">Challenges</h2>
+  <section id="two">
+    <div class="case_body">
+    <h2 class="ten xm-top m-bottom centered">Personal Challenges</h2>
       <h3 class="ten m-top ss-bottom centered">Understanding Vietnam pre-sale apartment market</h3>
         <p class="ten article-font centered s-bottom">I’m totally new to the Vietnam real estate market. Understanding the interaction between real estate market and apartment buyers is crucial to design appropriate app for our target user. Who/Why/How buy pre-sale apartments? What are important criteria for buying pre-sale apartments? </p>
 
@@ -106,11 +138,11 @@
         <p class="ten article-font centered xm-bottom">Within a limited time frame (5 weeks), I need to design an MVP that includes key features for buying pre-sale apartment in Vietnam.</p>
 
         <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="three"></div>
-  <div class="case_body">
+  <section id="three">
+    <div class="case_body">
     <h2 class="ten xm-top m-bottom centered">Today's Solution</h2>
       <img class="ss-bottom center_img" src="images/today_solution.png" srcset="images/today_solution.png 2x" style="width:100%;" alt="Today's solution"/>
       <h3 class="ten m-top ss-bottom centered">Batdongsan</h3>
@@ -120,12 +152,12 @@
         <p class="ten article-font centered xm-bottom">Vietnam’s oldest real estate app, Nha Tro Tot fails to follow the modern trend of the UI design. The app uses <strong>confusing text overlays and overly contrasting colors</strong> that reduce readability. While a reasonable amount of color contrast increases scan-ability, too much contrast often diminishes scan-ability.</p>
 
         <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="four"><div>
-  <div class="case_body">
-    <h2 class="ten xm-top s-bottom centered">Understanding the Problem</h2>
+  <section id="four">
+    <div class="case_body">
+      <h2 class="ten xm-top s-bottom centered">Understanding the Problem</h2>
       <h3 class="ten m-top ss-bottom centered">User Research</h3>
         <p class="ten article-font centered ss-bottom">I conducted user interviews with three different Vietnamese co-workers who had already bought an apartment or were planning to buy an apartment in near future to have a better understanding of their experiences and mental models in buying pre-sale apartments. Without understanding their pain points and mental models, I couldn’t figure out what features might be relevant to them.  <br><br>
 
@@ -156,11 +188,11 @@
           <p class="ten xl-left article-font quote-border centered xm-bottom"><em>Vietnam real estate apps are confusing, incomplete, and hardly providing a comprehensive apartment searching experience.</em></p>
 
       <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="five"><div>
-  <div class="case_body">
+  <section id="five">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Suggested Solution</h2>
       <p class="ten article-font centered ss-bottom">The solution takes major pain points and needs of our target audience into accounts. Hence, this MVP app should be <strong>simple enough to easily navigate through but comprehensive enough to prevent browsing different web sources.</strong> I created an information architecture to divide between primary features of MVP and secondary features of MVP. This diagram includes three key solutions: 1) Easy Apartment Searching 2) Simple and Relevant Search Filters 3) Detailed Apartment Information.</p>
 
@@ -188,11 +220,11 @@
         As the most important design element of this MVP app, I included a Call/SMS button so people can contact the developer and decide whether to buy an apartment or not.</p>
 
         <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="six"><div>
-  <div class="case_body">
+  <section id="six">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Visual Design</h2>
       <h3 class="ten m-top ss-bottom centered">Moodboard</h3>
 
@@ -209,32 +241,34 @@
         </p>
 
         <hr class="ten article-font centered xm-bottom">
-  </div>
+    </div>
+  </section>
 
-
-  <div id="seven"><div>
-  <div class="case_body">
+  <section id="seven">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Final Prototype</h2>
       <div class="flex center vertical xs-bottom">
         <iframe width="442" height="935" src="//invis.io/BDN8A3ICSRK" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div>
+    </div>
+  </section>
 
-
-  <div id="eight"><div>
-  <div class="case_body">
+  <section id="eight">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">What I Learned</h2>
       <p class="ten article-font centered s-bottom">
       This <strong>5 week internship</strong> was both challenging and rewarding. Under a tight deadline, I learned how to prioritize features and managed to finish the MVP version of the mobile app. More importantly, I learned how to be flexible with the design process as there are multiple methods you can utilize to solve the user’s problem. However, I was always cautious to have a clear problem that I’m solving for and constantly empathized with target users throughout the whole design process. In addition, multiple user interviews and user testings made me to realize that I should openly accept feedbacks and critiques since I’m not the user for the product. Overall, designing a mobile app from the scratch with the help of a product manager, a UI designer, and engineers was a truly meaningful experience.</p>
-  </div>
+    </div>
+  </section>
 
-
-  <div id="nine"><div>
-  <div class="case_body">
+  <section id="nine">
+    <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Things to Consider Further</h2>
       <p class="ten article-font centered xm-bottom">
         1. Explore untouched features of MVP <br>
         2. Conduct more rounds of user testing <br>
         3. Design for apartment sellers <br></p>
-  </div>
+    </div>
+  </section>
 </body>
+</html>
