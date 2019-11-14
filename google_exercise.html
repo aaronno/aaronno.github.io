@@ -18,7 +18,9 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
+  <link rel="stylesheet" href="styles/magnific-popup.css">
   <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
@@ -43,6 +45,12 @@
     });
   </script>
 
+  <script>
+    $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
+    });
+  </script>
+
   <div class="casestudy-sidebar">
     <ul class="nav2" id="sidebar">
       <li><a href="#one">Prompt</a></li>
@@ -62,7 +70,9 @@
   </div>
 
   <div class="flex center vertical">
-    <img src="images/google_design_exercise_hero.jpg" srcset="images/google_design_exercise_hero.jpg 2x" style="width:100%;" alt="google design exercise"/>
+    <a class="image-link" href="images/google_design_exercise_hero.jpg">
+      <img src="images/google_design_exercise_hero.jpg" srcset="images/google_design_exercise_hero.jpg 2x" style="width:100%;" alt="google design exercise"/>
+    </a>
   </div>
 
   <div id="top">
@@ -111,9 +121,9 @@
     <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Initial Research</h2>
       <div class="flex tab-wrap">
-        <div class="eight s-right tab-width xs-bottom"><img src="images/brainstorm1.jpg" srcset="images/brainstorm1.jpg 2x" style="width:100%;" alt="brainstorm_1_aaron"></div>
-        <div class="eight s-right tab-width xs-bottom"><img src="images/brainstorm2.jpg" srcset="images/brainstorm2.jpg 2x" style="width:100%;" alt="brainstorm_2_aaron"/></div>
-        <div class="eight tab-width xs-bottom"><img src="images/brainstorm3.jpg" srcset="images/brainstorm3.jpg 2x" style="width:100%;" alt="brainstorm_3_aaron"/></div>
+        <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/brainstorm1.jpg"><img src="images/brainstorm1.jpg" srcset="images/brainstorm1.jpg 2x" style="width:100%;" alt="brainstorm_1_aaron"></a></div>
+        <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/brainstorm2.jpg"><img src="images/brainstorm2.jpg" srcset="images/brainstorm2.jpg 2x" style="width:100%;" alt="brainstorm_2_aaron"/></a></div>
+        <div class="eight tab-width xs-bottom"><a class="image-link" href="images/brainstorm3.jpg"><img src="images/brainstorm3.jpg" srcset="images/brainstorm3.jpg 2x" style="width:100%;" alt="brainstorm_3_aaron"/></a></div>
       </div>
       <h4 class="s-bottom text-center">Initial brainstorming to understand the prompt</h4>
 
@@ -132,8 +142,8 @@
         <em>A full list of interview transcripts can be found <a href="https://paper.dropbox.com/doc/Google-Design-Exercise-User-Research--Am0O5m5fK23jhcmCpbNvztIDAQ-BnsLBDPNRIpWyPYsr65YW" target="_blank" class="link original-blue">here</a></em></p>
 
         <div class="flex tab-wrap">
-          <div class="eight s-right tab-width xs-bottom"><img src="images/userinterview_1.png" srcset="images/userinterview_1.png 2x" style="width:100%;" alt="userinterview_1"></div>
-          <div class="eight tab-width xs-bottom"><img src="images/userinterview_2.png" srcset="images/userinterview_2.png 2x" style="width:100%;" alt="userinterview_2"/></div>
+          <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/userinterview_1.png"><img src="images/userinterview_1.png" srcset="images/userinterview_1.png 2x" style="width:100%;" alt="userinterview_1"></a></div>
+          <div class="eight tab-width xs-bottom"><a class="image-link" href="images/userinterview_2.png"><img src="images/userinterview_2.png" srcset="images/userinterview_2.png 2x" style="width:100%;" alt="userinterview_2"/></a></div>
         </div>
         <h4 class="text-center">Interview objective / protocol / questions I asked</h4>
 
@@ -185,13 +195,15 @@
       <p class="ten article-font centered s-bottom">What problems to solve, what features to focus, and what information is needed were clear after the above steps, I jumped right into a brainstorming phase. I quickly draw the user flow, trying to include all relevant features I was thinking about.</p>
 
       <div class="flex tab-wrap">
-        <div class="eight s-right tab-width xs-bottom"><img src="images/sketch1.jpg" srcset="images/sketch1.jpg 2x" style="width:100%;" alt="sketch1"></div>
-        <div class="eight tab-width xs-bottom"><img src="images/sketch2.jpg" srcset="images/sketch2.jpg 2x" style="width:100%;" alt="sketch2"/></div>
+        <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/sketch1.jpg"><img src="images/sketch1.jpg" srcset="images/sketch1.jpg 2x" style="width:100%;" alt="sketch1"></a></div>
+        <div class="eight tab-width xs-bottom"><a class="image-link" href="images/sketch2.jpg"><img src="images/sketch2.jpg" srcset="images/sketch2.jpg 2x" style="width:100%;" alt="sketch2"/></a></div>
       </div>
 
       <p class="s-top ten article-font centered s-bottom">After mapping out the user flow, I could organize my thoughts and was determined to move on to Sketch, where I can easily move around different screens. Below is the final user flow after multiple iterations in Sketch:</p>
 
-      <img class="s-top ss-bottom center_img" src="images/student_clubs_experience.png" srcset="images/student_clubs_experience.png 2x" style="width:100%;" alt="student_clubs_experience"/>
+      <a class="image-link" href="images/student_clubs_experience.png">
+        <img class="s-top ss-bottom center_img" src="images/student_clubs_experience.png" srcset="images/student_clubs_experience.png 2x" style="width:100%;" alt="student_clubs_experience"/>
+      </a>
 
       <p class="s-top ten article-font centered s-bottom">This user flow can be divided into four prioritized features:</p>
 
@@ -207,7 +219,9 @@
 
       <h3 class="ten m-top ss-bottom centered">Onboarding</h3>
 
-      <img class="s-top ss-bottom center_img" src="images/onboarding.png" srcset="images/onboarding.png 2x" style="width:100%;" alt="onboarding"/>
+      <a class="image-link" href="images/onboarding.png">
+        <img class="s-top ss-bottom center_img" src="images/onboarding.png" srcset="images/onboarding.png 2x" style="width:100%;" alt="onboarding"/>
+      </a>
 
       <p class="s-top ten article-font centered s-bottom">Most interviewees were tired of discovering student clubs from all over the place (e.g., Facebook Events, Club Fair, Club Websites, Quarter Cards, etc). How might we help students easily discover clubs and club events? I came up with an idea of recommending the best club to students based on questionnaire responses. Instead of wasting much time while searching and browsing student clubs, this simple onboarding questionnaire can greatly reduce the burden of students.<br><br>
 
@@ -216,8 +230,8 @@
       <h3 class="ten m-top ss-bottom centered">Exploring Clubs / Events</h3>
 
       <div class="flex s-top tab-wrap">
-        <div class="eight s-right tab-width xs-bottom"><img src="images/exploring_clubs.png" srcset="images/exploring_clubs.png 2x" style="width:100%;" alt="exploring_clubs"></div>
-        <div class="eight tab-width xs-bottom"><img src="images/exploring_events.png" srcset="images/exploring_events.png 2x" style="width:100%;" alt="exploring_events"/></div>
+        <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/exploring_clubs.png"><img src="images/exploring_clubs.png" srcset="images/exploring_clubs.png 2x" style="width:100%;" alt="exploring_clubs"></a></div>
+        <div class="eight tab-width xs-bottom"><a class="image-link" href="images/exploring_events.png"><img src="images/exploring_events.png" srcset="images/exploring_events.png 2x" style="width:100%;" alt="exploring_events"/></a></div>
       </div>
 
       <p class="s-top ten article-font centered s-bottom">What is the next step after giving club recommendations to students? They would want to see the list of clubs and want to find out more about clubs and club events. I utilized a simple top-navigation bar with a search bar and two menus: <em>clubs and events.</em> This concise navigation enables users to focus on the core interaction of the app: <em>efficiently searching and browsing student clubs/club events.</em><br><br>
@@ -228,7 +242,9 @@
 
       <h3 class="ten m-top ss-bottom centered">Alerting Events / Application Deadlines</h3>
 
-      <img class="s-top ss-bottom center_img" src="images/deadlines.png" srcset="images/deadlines.png 2x" style="width:100%;" alt="deadlines"/>
+      <a class="image-link" href="images/deadlines.png">
+        <img class="s-top ss-bottom center_img" src="images/deadlines.png" srcset="images/deadlines.png 2x" style="width:100%;" alt="deadlines"/>
+      </a>
 
       <p class="s-top ten article-font centered s-bottom">While onboarding and exploring features encourage effortless clubs/club events discovery, I wanted to provide a smooth transition from club discovery to club joining experiences. Based on the user research, I found out that many club applications are due in the beginning weeks of the semester and students easily forget events and application deadlines. To capture this need, I decided to add the notification system as the main feature of the app. Instead of manually keeping track of numerous events and deadlines, this app will remember and notify them in advance.<br><br>
 
@@ -236,7 +252,9 @@
 
       <h3 class="ten m-top ss-bottom centered">Proposing Club</h3>
 
-      <img class="s-top ss-bottom center_img" src="images/proposing_club.png" srcset="images/proposing_club.png 2x" style="width:100%;" alt="proposing_club"/>
+      <a class="image-link" href="images/proposing_club.png">
+        <img class="s-top ss-bottom center_img" src="images/proposing_club.png" srcset="images/proposing_club.png 2x" style="width:100%;" alt="proposing_club"/>
+      </a>
 
       <p class="s-top ten article-font centered s-bottom">Of the six interviewees, only one participant was interested in creating a new student organization. Therefore, I assumed that starting a new club is not a common experience for many students, thus deciding to hide the feature inside the hamburger menu. Besides, the club registration process was quite complicated for beginners so I chose to include basic guidelines, procedures, policies, and a link to get started with proposing a new club.</p>
     </div>
@@ -246,7 +264,7 @@
     <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">High Fidelity Screen</h2>
         <div class="flex s-top tab-wrap">
-          <div class="eight s-right tab-width xs-bottom"><img src="images/club_information_page.png" srcset="images/club_information_page.png 2x" style="width:100%;" alt="club_information_page"></div>
+          <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/club_information_page.png"><img src="images/club_information_page.png" srcset="images/club_information_page.png 2x" style="width:100%;" alt="club_information_page"></a></div>
           <p class="s-top ten article-font centered s-bottom">This is a high-fidelity screen of the club information page. I wanted to <em>provide concise and useful club information</em> so students can easily choose whether they want to know more about the club or not.<br><br>
 
           First and foremost, this page displays club photos that show what the club does regularly and what are the main activities. After having a big picture of what the club is doing, students might want to figure out the basic information of the club.<br><br>

@@ -18,7 +18,9 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
+  <link rel="stylesheet" href="styles/magnific-popup.css">
   <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
@@ -40,6 +42,12 @@
                 $(".casestudy-sidebar").hide();
             }
         });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
     });
   </script>
 
@@ -139,8 +147,8 @@
     <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Determining Spaces to Improve</h2>
       <div class="flex tab-wrap">
-        <div class="eight s-right tab-width xs-bottom"><img src="images/brainstorming_1.jpeg" srcset="images/brainstorming_1.jpeg 2x" style="width:100%;" alt="brainstorming1"></div>
-        <div class="eight tab-width xs-bottom"><img src="images/brainstorming_2.jpeg" srcset="images/brainstorming_2.jpeg 2x" style="width:100%;" alt="brainstorming2"></div>
+        <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/brainstorming_1.jpeg"><img src="images/brainstorming_1.jpeg" srcset="images/brainstorming_1.jpeg 2x" style="width:100%;" alt="brainstorming1"></a></div>
+        <div class="eight tab-width xs-bottom"><a class="image-link" href="images/brainstorming_2.jpeg"><img src="images/brainstorming_2.jpeg" srcset="images/brainstorming_2.jpeg 2x" style="width:100%;" alt="brainstorming2"></a></div>
       </div>
       <h4 class="text-center">Brainstorming session</h4>
 
@@ -148,7 +156,9 @@
         <p class="ten article-font centered s-bottom">I recruited my friends, Eddy and Jungwon, as my brainstorming buddies. After exploring, we discovered six solution spaces: Scheduling Post, Notifications to Post, Removing Likes, Republish Past Post, Pre-Censor Post, and Experts Check Post Quality.</p>
 
       <div class="flex center vertical">
-        <img src="images/impact_feasibility.png" srcset="images/impact_feasibility.png 2x" style="width:80%;" alt="impact_feasibility"/>
+        <a class="image-link" href="images/impact_feasibility.png">
+          <img src="images/impact_feasibility.png" srcset="images/impact_feasibility.png 2x" style="width:80%;" alt="impact_feasibility"/>
+        </a>
       </div>
 
       <h3 class="ten m-top ss-bottom centered">Deciding Feature</h3>
@@ -165,8 +175,8 @@
 
       <h3 class="ten m-top s-bottom centered">Initial Approach</h3>
         <div class="flex tab-wrap">
-          <div class="eight s-right tab-width xs-bottom"><img src="images/low_fidelity_1.png" srcset="images/low_fidelity_1.png 2x" style="width:100%;" alt="low_fidelity_1.png"></div>
-          <div class="eight tab-width xs-bottom"><img src="images/low_fidelity_2.png" srcset="images/low_fidelity_2.png 2x" style="width:100%;" alt="low_fidelity_2.png"></div>
+          <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/low_fidelity_1.png"><img src="images/low_fidelity_1.png" srcset="images/low_fidelity_1.png 2x" style="width:100%;" alt="low_fidelity_1.png"></a></div>
+          <div class="eight tab-width xs-bottom"><a class="image-link" href="images/low_fidelity_2.png"><img src="images/low_fidelity_2.png" srcset="images/low_fidelity_2.png 2x" style="width:100%;" alt="low_fidelity_2.png"></a></div>
         </div>
 
         <h4 class="text-center m-bottom">Low-Fidelity Sketches for Scheduling Posts</h4>
@@ -174,7 +184,9 @@
 
       <h3 class="ten m-top s-bottom centered">How Other Products Execute Scheduling Posts</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/inspiration.png" srcset="images/inspiration.png 2x" style="width:100%;" alt="impact_feasibility"/>
+          <a class="image-link" href="images/inspiration.png">
+            <img src="images/inspiration.png" srcset="images/inspiration.png 2x" style="width:100%;" alt="impact_feasibility"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Market Research for Scheduling Posts</h4>
@@ -184,7 +196,9 @@
         <p class="ten article-font centered s-bottom">Following insights from market research, I determined key elements to schedule a post.</p>
 
         <div class="flex center vertical xs-bottom">
-          <img src="images/content.png" srcset="images/content.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/content.png">
+            <img src="images/content.png" srcset="images/content.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Information Architecture for Scheduling Posts</h4>
@@ -196,7 +210,9 @@
         <p class="ten article-font centered s-bottom">I then moved on to medium-fidelity mockups, beginning with the entry point.</p>
 
         <div class="flex center vertical xs-bottom">
-          <img src="images/entry_point.png" srcset="images/entry_point.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/entry_point.png">
+            <img src="images/entry_point.png" srcset="images/entry_point.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Explorations for Schedule Post Button</h4>
@@ -208,7 +224,9 @@
         <p class="ten article-font centered s-bottom">I then explored different ways to design the most intuitive “Date and Time Picker” for the Schedule Post page.</p>
 
         <div class="flex center vertical xs-bottom">
-          <img src="images/date_time_picker.png" srcset="images/date_time_picker.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/date_time_picker.png">
+            <img src="images/date_time_picker.png" srcset="images/date_time_picker.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Date and Time Picker Explorations</h4>
@@ -220,7 +238,9 @@
         <p class="ten article-font centered s-bottom">After scheduling a post, users would expect a feedback to confirm that they have scheduled a post. How might we make sure that a user has successfully scheduled a post?</p>
 
         <div class="flex center vertical xs-bottom">
-          <img src="images/notification_icon.png" srcset="images/notification_icon.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/notification_icon.png">
+            <img src="images/notification_icon.png" srcset="images/notification_icon.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Visual Explorations for Scheduled Post Notification</h4>
@@ -228,7 +248,9 @@
 
       <h3 class="ten m-top s-bottom centered">Final Interaction for Scheduling Posts</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/scheduling_post_flow.png" srcset="images/scheduling_post_flow.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/scheduling_post_flow.png">
+            <img src="images/scheduling_post_flow.png" srcset="images/scheduling_post_flow.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">User Flow for Scheduling Post</h4>
@@ -247,7 +269,9 @@
 
       <h3 class="ten m-top s-bottom centered">Deciding the Entry Point</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/entry_point_2.png" srcset="images/entry_point_2.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/entry_point_2.png">
+            <img src="images/entry_point_2.png" srcset="images/entry_point_2.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Explorations for Entry Points</h4>
@@ -255,7 +279,9 @@
 
       <h3 class="ten m-top s-bottom centered">Which Preview Feels Natural?</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/preview.png" srcset="images/preview.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/preview.png">
+            <img src="images/preview.png" srcset="images/preview.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Explorations for Preview Scheduled Posts</h4>
@@ -263,7 +289,9 @@
 
       <h3 class="ten m-top s-bottom centered">When Scheduled Posts are Uploaded?</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/queue.png" srcset="images/queue.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/queue.png">
+            <img src="images/queue.png" srcset="images/queue.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">Explorations for View Scheduled Posts</h4>
@@ -271,14 +299,18 @@
 
       <h3 class="ten m-top s-bottom centered">Final Interaction for Previewing</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/preview_scheduled_post_flow.png" srcset="images/preview_scheduled_post_flow.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/preview_scheduled_post_flow.png">
+            <img src="images/preview_scheduled_post_flow.png" srcset="images/preview_scheduled_post_flow.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center xm-bottom">User Flow for Previewing Scheduled Posts</h4>
 
       <h3 class="ten m-top s-bottom centered">Final Interaction for Editing/Viewing</h3>
         <div class="flex center vertical xs-bottom">
-          <img src="images/edit_view_scheduled_post_flow.png" srcset="images/edit_view_scheduled_post_flow.png 2x" style="width:100%;" alt="content"/>
+          <a class="image-link" href="images/edit_view_scheduled_post_flow.png">
+            <img src="images/edit_view_scheduled_post_flow.png" srcset="images/edit_view_scheduled_post_flow.png 2x" style="width:100%;" alt="content"/>
+          </a>
         </div>
 
         <h4 class="text-center m-bottom">User Flow for Editing/Viewing Scheduled Posts</h4>
@@ -295,7 +327,9 @@
     <h2 class="ten xm-top s-bottom centered">Instagram UI Kit</h2>
       <p class="ten article-font centered s-bottom"><em>This is the UI Kit that I created from my product design process.</em></p>
       <div class="flex center vertical xs-bottom">
-        <img src="images/ui_foundations.png" srcset="images/ui_foundations.png 2x" style="width:100%;" alt="content"/>
+        <a class="image-link" href="images/ui_foundations.png">
+          <img src="images/ui_foundations.png" srcset="images/ui_foundations.png 2x" style="width:100%;" alt="content"/>
+        </a>
       </div>
       <h4 class="text-center xm-bottom">UI Kit</h4>
     </div>

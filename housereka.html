@@ -18,7 +18,9 @@
   <meta name="description" content="Aaron No, Product Designer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="styles/all.css">
+  <link rel="stylesheet" href="styles/magnific-popup.css">
   <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
@@ -40,6 +42,12 @@
                 $(".casestudy-sidebar").hide();
             }
         });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
     });
   </script>
 
@@ -144,7 +152,9 @@
   <section id="three">
     <div class="case_body">
     <h2 class="ten xm-top m-bottom centered">Today's Solution</h2>
-      <img class="ss-bottom center_img" src="images/today_solution.png" srcset="images/today_solution.png 2x" style="width:100%;" alt="Today's solution"/>
+      <a class="image-link" href="images/today_solution.png">
+        <img class="ss-bottom center_img" src="images/today_solution.png" srcset="images/today_solution.png 2x" style="width:100%;" alt="Today's solution"/>
+      </a>
       <h3 class="ten m-top ss-bottom centered">Batdongsan</h3>
         <p class="ten article-font centered s-bottom">While the primary app for the Vietnam real estate community, Batdongsan is filled with <strong>too much text that do not make immediate sense to the user.</strong> It takes unnecessary amount of time for user to find relevant information. Also, irregular spacing and monotonous colors prevent seamless user experiences.</p>
 
@@ -173,14 +183,16 @@
 
       <h3 class="ten m-top ss-bottom centered">Identifying Persona</h3>
         <p class="ten article-font centered ss-bottom"> From the interviews, I found similarities among interviewees’ responses. Applying this trend, I created a fictional persona <strong>Jane</strong> so that I develop empathy with a group of real users. Throughout my whole design process, I always referred back to Jane so that I design for real users not for ourselves.
-
-        <img class="s-top ss-bottom center_img" src="images/persona.jpg" srcset="images/persona.jpg 2x" style="width:100%;" alt="Persona image"/>
+        <a class="image-link" href="images/persona.jpg">
+          <img class="s-top ss-bottom center_img" src="images/persona.jpg" srcset="images/persona.jpg 2x" style="width:100%;" alt="Persona image"/>
+        </a>
         </p>
 
       <h3 class="ten m-top ss-bottom centered">Visualizing Journey</h3>
         <p class="ten article-font centered ss-bottom">To visualize steps that Jane has to go through to accomplish her goal, I created a journey map. This map represents her actions, feelings, and thoughts during her journey, allowing me to find opportunities to address her pain points throughout the journey.
-
-        <img class="s-top ss-bottom center_img" src="images/journey_map.png" srcset="images/journey_map.png 2x" style="width:100%;" alt="Journey Map"/>
+        <a class="image-link" href="images/journey_map.png">
+          <img class="s-top ss-bottom center_img" src="images/journey_map.png" srcset="images/journey_map.png 2x" style="width:100%;" alt="Journey Map"/>
+        </a>
         </p>
 
       <h3 class="ten m-top ss-bottom centered">Defining People Problem</h3>
@@ -195,25 +207,32 @@
     <div class="case_body">
     <h2 class="ten xm-top s-bottom centered">Suggested Solution</h2>
       <p class="ten article-font centered ss-bottom">The solution takes major pain points and needs of our target audience into accounts. Hence, this MVP app should be <strong>simple enough to easily navigate through but comprehensive enough to prevent browsing different web sources.</strong> I created an information architecture to divide between primary features of MVP and secondary features of MVP. This diagram includes three key solutions: 1) Easy Apartment Searching 2) Simple and Relevant Search Filters 3) Detailed Apartment Information.</p>
-
-      <img class="s-top xm-bottom center_img" src="images/info_architecture.png" srcset="images/info_architecture.png 2x" style="width:100%;" alt="Information Architecture"/>
+      <a class="image-link" href="images/info_architecture.png">
+        <img class="s-top xm-bottom center_img" src="images/info_architecture.png" srcset="images/info_architecture.png 2x" style="width:100%;" alt="Information Architecture"/>
+      </a>
 
     <h3 class="ten m-top ss-bottom centered">1. Easy apartment searching</h3>
-      <img class="s-top ss-bottom center_img" src="images/apt_searching_selecting.png" srcset="images/apt_searching_selecting.png 2x" style="width:100%;" alt="Apartment_searching_selecting"/>
+      <a class="image-link" href="images/apt_searching_selecting.png">
+        <img class="s-top ss-bottom center_img" src="images/apt_searching_selecting.png" srcset="images/apt_searching_selecting.png 2x" style="width:100%;" alt="Apartment_searching_selecting"/>
+      </a>
       <p class="ten article-font centered ss-bottom">
         The two main user stories for searching are people who search pre-sale apartment by specific city/district, and people who search pre-sale apartment by project name. This information made it easy to include the placeholder text ‘City, District, Project Name’ within the search bar to hint users what to search for.<br><br>
 
         I tried to facilitate the searching process by providing multiple visual aids to users. On the first screen, the map shows number of available pre-sale apartment projects across different cities. By clicking numbered circles, users can see zoomed in map results like the fourth image without typing city. On the fourth screen, users can quickly tab among different apartment projects. On the fifth screen, the bottom block captures most important details like apartment price and location.</p>
 
     <h3 class="ten m-top ss-bottom centered">2. Simple and relevant search filters</h3>
-      <img class="s-top ss-bottom center_img" src="images/apt_search_filters.png" srcset="images/apt_search_filters.png 2x" style="width:100%;" alt="Apartment_search_filters"/>
+      <a class="image-link" href="images/apt_search_filters.png">
+        <img class="s-top ss-bottom center_img" src="images/apt_search_filters.png" srcset="images/apt_search_filters.png 2x" style="width:100%;" alt="Apartment_search_filters"/>
+      </a>
       <p class="ten article-font centered ss-bottom">
         While people usually have specific price range or location in mind when searching for pre-sale apartments, they often have other important criteria to consider. Those criteria entails number of bedrooms, bathrooms, developer, constructor, and orientation. It was interesting to notice that Vietnam people culturally believe the orientation of the house as a key factor when choosing an apartment.<br><br>
 
         For clear interaction, I tried to address how the number of results are constantly updated as users input different filter options, shown on the fourth and fifth screen. I also included the reset button so that users can always restart their filtering without manually deselecting every option.</p>
 
     <h3 class="ten m-top ss-bottom centered">3. Detailed apartment information</h3>
-      <img class="s-top ss-bottom center_img" src="images/apt_information.png" srcset="images/apt_information.png 2x" style="width:100%;" alt="Apartment_Information"/>
+      <a class="image-link" href="images/apt_information.png">
+        <img class="s-top ss-bottom center_img" src="images/apt_information.png" srcset="images/apt_information.png 2x" style="width:100%;" alt="Apartment_Information"/>
+      </a>
       <p class="ten article-font centered xm-bottom">
         Since our target audience are Vietnam newlyweds who are planning to have babies soon, It was essential to include relevant apartment information to new families with babies. Families with babies preferred a pre-sale apartment with schools nearby, safe neighborhoods, and plentiful amenities. In addition, I included detailed overview and apartment description sections so people grasp a comprehensive view of different pre-sale apartments.<br><br>
 
@@ -229,15 +248,17 @@
       <h3 class="ten m-top ss-bottom centered">Moodboard</h3>
 
         <div class="flex tab-wrap">
-          <div class="eight s-right tab-width xs-bottom"><img src="images/moodboard_aaron.jpg" srcset="images/moodboard_aaron.jpg 2x" style="width:100%;" alt="moodboard_aaron"></div>
-          <div class="eight tab-width xs-bottom"><img src="images/moodboard_yen.jpg" srcset="images/moodboard_yen.jpg 2x" style="width:100%;" alt="moodboard_yen"/></div>
+          <div class="eight s-right tab-width xs-bottom"><a class="image-link" href="images/moodboard_aaron.jpg"><img src="images/moodboard_aaron.jpg" srcset="images/moodboard_aaron.jpg 2x" style="width:100%;" alt="moodboard_aaron"></a></div>
+          <div class="eight tab-width xs-bottom"><a class="image-link" href="images/moodboard_yen.jpg"><img src="images/moodboard_yen.jpg" srcset="images/moodboard_yen.jpg 2x" style="width:100%;" alt="moodboard_yen"/></a></div>
         </div>
         <p class="ten article-font centered ss-bottom">
         Collaborating with the UI Designer Yen, we created a moodboard to come up with font, color, icons, and name for our app. We wanted the theme of our app to be trustful, simple, and innovative. After getting inspiration from logos of various real estate companies and brainstorming diverse ideas, we created a style guide for our app.</p>
 
       <h3 class="ten m-top ss-bottom centered">UI Kit</h3>
         <p class="ten article-font centered ss-bottom">
-          <img class="s-top ss-bottom center_img" src="images/style_guide.png" srcset="images/style_guide.png 2x" style="width:100%;" alt="Style Guide"/>
+          <a class="image-link" href="images/style_guide.png">
+            <img class="s-top ss-bottom center_img" src="images/style_guide.png" srcset="images/style_guide.png 2x" style="width:100%;" alt="Style Guide"/>
+          </a>
         </p>
 
         <hr class="ten article-font centered xm-bottom">
